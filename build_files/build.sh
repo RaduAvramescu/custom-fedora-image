@@ -12,6 +12,8 @@ set -ouex pipefail
 # this installs a package from fedora repos
 # dnf5 install -y tmux
 
+dnf5 install -y alacritty
+
 # Steam
 dnf5 -y config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-steam.repo
 dnf5 install -y steam
