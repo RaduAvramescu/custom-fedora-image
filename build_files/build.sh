@@ -13,14 +13,12 @@ set -ouex pipefail
 # dnf5 install -y tmux
 
 dnf5 install -y /ctx/rpm/goxlr-utility-1.2.2-1.x86_64.rpm
-dnf5 install -y alacritty
+dnf5 install -y alacritty mangohud
 
 # Steam
 dnf5 -y config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-steam.repo
 dnf5 install -y steam
 rm -rf /etc/yum.repos.d/fedora-steam.repo
-
-dnf5 install -y mangohud
 
 # Use a COPR Example:
 #
