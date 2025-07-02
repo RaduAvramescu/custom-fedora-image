@@ -12,6 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 # dnf5 install -y tmux
 
+dnf5 install -y /ctx/rpm/goxlr-utility-1.2.2-1.x86_64.rpm
 dnf5 install -y alacritty
 
 # Steam
