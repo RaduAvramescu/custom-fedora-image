@@ -20,6 +20,8 @@ dnf5 -y config-manager addrepo --from-repofile=https://negativo17.org/repos/fedo
 dnf5 install -y steam
 rm -rf /etc/yum.repos.d/fedora-steam.repo
 
+dnf5 install -y mangohud
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
